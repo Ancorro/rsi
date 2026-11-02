@@ -7,3 +7,5 @@ Step 1 (probe): rebuild Qwen3.5-0.8B with the authors' released edits (`edits/`,
     ./run.sh <name> <problems per set> <samples per problem> [unedited,p50c,...]
 
 Runs on a local RTX 3090 through a one-job GPU queue. Results land in `results/<name>/`.
+
+Results: `results/<name>/summary.json`; the probe30 numbers are in the top README.
