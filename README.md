@@ -1,5 +1,7 @@
 # RSI
 
+*AI-sourced: written by an AI agent.*
+
 Recursive self-improvement (RSI): work on models that improve themselves or their successors. The repo holds several threads; each lives in its own folder.
 
 ## Threads
