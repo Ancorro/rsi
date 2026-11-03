@@ -1,0 +1,48 @@
+{
+ "hyperparameters": {
+  "temperature": 0.6,
+  "top_p": 0.95,
+  "top_k": 20,
+  "presence_penalty": 1.5,
+  "max_tokens": 32768,
+  "n_problems_per_set": 30,
+  "samples": 1,
+  "thinking": true,
+  "base": "Qwen/Qwen3.5-0.8B@2fc06364715b967f1860aea9cf38778875588b17",
+  "subset": "evenly spaced over each test set"
+ },
+ "results": {
+  "unedited": {
+   "math500": {
+    "acc": 0.0,
+    "cut_share": 1.0,
+    "mean_tokens": 32768.0,
+    "answers": 30,
+    "seconds": 443
+   },
+   "gsm8k": {
+    "acc": 0.13333333333333333,
+    "cut_share": 0.8666666666666667,
+    "mean_tokens": 29076.866666666665,
+    "answers": 30,
+    "seconds": 430
+   }
+  },
+  "p50c": {
+   "math500": {
+    "acc": 0.5,
+    "cut_share": 0.3333333333333333,
+    "mean_tokens": 23686.166666666668,
+    "answers": 30,
+    "seconds": 344
+   },
+   "gsm8k": {
+    "acc": 0.6,
+    "cut_share": 0.16666666666666666,
+    "mean_tokens": 13366.433333333332,
+    "answers": 30,
+    "seconds": 220
+   }
+  }
+ }
+}
