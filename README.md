@@ -37,12 +37,21 @@ projection; the logs may.
 | `src/wsp/loops.py` | Looping measures: share of repeated 20-token windows, hit-limit flag. |
 | `scripts/eval_gsm8k.py` | GSM8K accuracy and hit-limit rate for a model (base or an edited checkpoint path), JSON output. |
 | `data/gsm8k_test_50.jsonl` | 50 GSM8K test problems with numeric answers (MIT license, from `openai/gsm8k`). |
-| `papers/weight-space-programming/` | Notes on the paper. |
+| `papers/weight-space-programming/` | Notes on the paper; `replicate/` holds the GPU probe (vLLM, one RTX 3090) that rebuilds the authors' released edits and scores them. |
 
-Not here yet: finding the looping direction, editing the weights, evaluation of the edited model, MATH-500.
+Probe result (2026-11-02, `replicate/results/probe30/`): the authors' released edit (`p50c`) reproduces the gain on 30
+evenly spaced problems per set, 1 sample, the post's decoding settings with presence penalty 1.5 (vLLM), 32,768 tokens:
 
-Differences from the post so far: transformers has no presence penalty, so generation runs without one; a completion
-that reaches the token limit counts as wrong.
+| Model | MATH-500 | GSM8K | Hit token limit, MATH / GSM8K (%) |
+| --- | --- | --- | --- |
+| Unedited | 0.0 | 13.3 | 100 / 87 |
+| Released edit `p50c` | 50.0 | 60.0 | 33 / 17 |
+
+Not here yet: finding the looping direction ourselves, making our own edit, and evaluating it. The `src/wsp` package
+is the CPU-testable base for that work; the `replicate/` probe stays the reference GPU evaluation.
+
+Differences from the post in `src/wsp`: transformers has no presence penalty, so generation there runs without one (the
+`replicate/` probe uses vLLM with it); a completion that reaches the token limit counts as wrong.
 
 ## How to run
 
