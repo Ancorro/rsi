@@ -73,9 +73,9 @@ sequence, so only short smoke runs are practical there:
 
 - Paper: "Sparks of Weight-Space Programming", Takehi, Teoh, Zhang, Khattab (MIT CSAIL, 2026),
   https://rikiyat.github.io/blog/weight-space-programming/.
-- Released edits, prompts and logs: https://github.com/RikiyaT/lm_understand-logs (CC BY 4.0); the files in
+- Released edits, prompts and logs: https://github.com/RikiyaT/lm_understand-logs ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)); the files in
   `papers/weight-space-programming/replicate/edits/` come from there. `replicate/vendor/` scripts are from the same
-  repo (MIT).
+  repo (MIT; notice in `replicate/vendor/LICENSE`).
 - Model: Qwen/Qwen3.5-0.8B, Qwen team, https://huggingface.co/Qwen/Qwen3.5-0.8B (Apache-2.0).
 - Data: GSM8K, Cobbe et al. 2021, https://huggingface.co/datasets/openai/gsm8k (MIT); `data/gsm8k_test_50.jsonl` is
   50 test problems from it. MATH-500, https://huggingface.co/datasets/HuggingFaceH4/MATH-500 (MIT).
