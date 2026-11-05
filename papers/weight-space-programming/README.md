@@ -1,6 +1,6 @@
 # Sparks of Weight-Space Programming
 
-*AI-sourced: written by an AI agent.*
+*AI-sourced: assisted by AI agents.*
 
 - Post: https://rikiyat.github.io/blog/weight-space-programming/
 - Logs, prompts, networks: https://github.com/RikiyaT/lm_understand-logs

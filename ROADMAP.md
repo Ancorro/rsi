@@ -1,6 +1,6 @@
 # Roadmap
 
-*AI-sourced: written by an AI agent.*
+*AI-sourced: assisted by AI agents.*
 
 - [ ] Find the looping direction in the MLP outputs of layers 15 and 19 from training problems only, remove it, and
       evaluate the edited model against the released `p50c` edit.

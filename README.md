@@ -1,6 +1,6 @@
 # RSI
 
-*AI-sourced: written by an AI agent.*
+*AI-sourced: assisted by AI agents.*
 
 Recursive self-improvement (RSI): work on models that improve themselves or their successors. The first thread is an
 independent reproduction of one result from "Sparks of Weight-Space Programming" (Takehi, Teoh, Zhang,
